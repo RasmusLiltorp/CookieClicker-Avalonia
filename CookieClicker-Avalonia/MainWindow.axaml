@@ -3,13 +3,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         x:Class="CookieClicker_Avalonia.MainWindow"
-        Width="400" Height="500"
+        Width="400" Height="550"
         Title="CookieClicker_Avalonia">
         <Grid>
                 <StackPanel>
-                    <Image Source="avares://CookieClicker-Avalonia/Assets/Cookie.png" Cursor="Hand" PointerPressed="CookieClicked"/>
+                    <TextBlock HorizontalAlignment="Center" FontSize="16" Margin="0, 5, 0 ,0">Cookies per second: 0.0</TextBlock>
+                    <Image Source="avares://CookieClicker-Avalonia/Assets/Cookie.png" Margin="0, 15, 0 ,0" Cursor="Hand" PointerPressed="CookieClicked"/>
                     <TextBlock x:Name="CounterText" Text="Clicks: 0" FontSize="20"
                                HorizontalAlignment="Center"/>
+                    <Button HorizontalAlignment="Center" Margin="0, 15, 0 ,0">Shop</Button>
                 </StackPanel>
         </Grid>
    
